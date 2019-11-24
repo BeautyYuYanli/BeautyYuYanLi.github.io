@@ -80,7 +80,7 @@ theme: diaspora
 deploy:
   type: git
   repository: git@github.com:BeautyYuYanli/beautyyuyanli.github.io.git
-  branch: gh-pages
+  branch: master
 
 live2d:
   enable: true
