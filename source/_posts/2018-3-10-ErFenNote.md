@@ -2,7 +2,7 @@
 title: 二分/分治学习笔记
 date: 2018-3-10 12:12:12
 tags: [二分,分治,笔记]
-cover: https://pics1.beautyyuyanli.ml/C6RAC8.jpg
+thumbnail: https://pics1.beautyyu.top/origin/C6RAC8.jpg
 ---
 
 
@@ -60,4 +60,4 @@ cover: https://pics1.beautyyuyanli.ml/C6RAC8.jpg
 
 当然,由于鄙人比较弱,所以不知道这个操作除了求第k大之外还有什么用
 
-![](https://pics1.beautyyuyanli.ml/C6RAC8.jpg)
+![](https://pics1.beautyyu.top/origin/C6RAC8.jpg)

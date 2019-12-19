@@ -2,7 +2,7 @@
 title: a*学习笔记
 date: 2018-3-04 12:12:12
 tags: [a*,搜索,笔记]
-cover: https://pics1.beautyyuyanli.ml/C6RxiV.jpg
+thumbnail: https://pics1.beautyyu.top/origin/C6RxiV.jpg
 ---
 
 
@@ -92,4 +92,4 @@ a*一般用于解决最小花费/最大价值问题
     }
 ```
 
-![](https://pics1.beautyyuyanli.ml/C6RxiV.jpg)
+![](https://pics1.beautyyu.top/origin/C6RxiV.jpg)

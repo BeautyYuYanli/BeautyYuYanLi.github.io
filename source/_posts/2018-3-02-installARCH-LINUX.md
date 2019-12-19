@@ -2,7 +2,7 @@
 title: 安装ARCH LINUX小结
 date: 2018-3-02 12:12:12
 tags: [日记]
-cover: https://pics1.beautyyuyanli.ml/C6WUSS.jpg
+thumbnail: https://pics1.beautyyu.top/origin/C6WUSS.jpg
 ---
 
 
@@ -13,7 +13,7 @@ cover: https://pics1.beautyyuyanli.ml/C6WUSS.jpg
 
 安装arch linux最需要的是可靠的网络 机房安装会受到ip地址的制约 最好新开一个电脑共享wifi
 
-具体安装方式详见[这篇博客](https://pics1.beautyyuyanli.ml/arch_install/)
+具体安装方式详见[这篇博客](https://pics1.beautyyu.top/origin/arch_install/)
 
 此外kde的桌面环境十分好看,私以为比win系列高到不知道哪里去了
 
@@ -23,4 +23,4 @@ cover: https://pics1.beautyyuyanli.ml/C6WUSS.jpg
 
 贴上[官网](http://www.phoenixos.com/)
 
-![](https://pics1.beautyyuyanli.ml/C6WUSS.jpg)
+![](https://pics1.beautyyu.top/origin/C6WUSS.jpg)

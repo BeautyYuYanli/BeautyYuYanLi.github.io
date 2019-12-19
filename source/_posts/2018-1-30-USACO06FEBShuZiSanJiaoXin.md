@@ -2,7 +2,7 @@
 title: USACO06FEB数字三角形|题解
 date: 2018-1-30 17:30:11
 tags: [题解,搜索]
-cover: https://pics1.beautyyuyanli.ml/C62X9O.jpg
+thumbnail: https://pics1.beautyyu.top/origin/C62X9O.jpg
 ---
 
 
@@ -92,4 +92,4 @@ if (handle > n && weight == m){
 
 最后加上一行剪枝`if (weight >= m) return;`
 
-![](https://pics1.beautyyuyanli.ml/C62X9O.jpg)
+![](https://pics1.beautyyu.top/origin/C62X9O.jpg)

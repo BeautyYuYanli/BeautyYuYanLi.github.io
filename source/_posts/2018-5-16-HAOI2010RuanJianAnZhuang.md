@@ -2,7 +2,7 @@
 title: HAOI2010软件安装|题解
 date: 2018-5-16 17:17:17
 tags: [tarjan,dp,题解]
-cover: https://pics1.beautyyuyanli.ml/C6RVgg.jpg
+thumbnail: https://pics1.beautyyu.top/origin/C6RVgg.jpg
 ---
 
 
@@ -118,4 +118,4 @@ int f(int i,int wei){
 	return memf[i][wei] = ans;
 }
 ```
-![](https://pics1.beautyyuyanli.ml/C6RVgg.jpg)
+![](https://pics1.beautyyu.top/origin/C6RVgg.jpg)

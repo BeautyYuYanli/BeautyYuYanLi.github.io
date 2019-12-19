@@ -2,7 +2,7 @@
 title: luogu1433吃奶酪|题解
 date: 2018-1-30 17:30:11
 tags: [题解,搜索]
-cover: https://pics1.beautyyuyanli.ml/C6WEIx.jpg
+thumbnail: https://pics1.beautyyu.top/origin/C6WEIx.jpg
 ---
 
 
@@ -66,4 +66,4 @@ int main (){
 	return 0;
 }
 ```
-![](https://pics1.beautyyuyanli.ml/C6WEIx.jpg)
+![](https://pics1.beautyyu.top/origin/C6WEIx.jpg)

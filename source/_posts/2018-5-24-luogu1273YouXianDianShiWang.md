@@ -2,7 +2,7 @@
 title: luogu1273有线电视网|题解
 date: 2018-5-24 16:16:16
 tags: [dp,题解]
-cover: https://pics1.beautyyuyanli.ml/C619JS.jpg
+thumbnail: https://pics1.beautyyu.top/origin/C619JS.jpg
 ---
 
 其实是个`背包问题`
@@ -103,4 +103,4 @@ int main (){
 ```
 
 
-![](https://pics1.beautyyuyanli.ml/C619JS.jpg)
+![](https://pics1.beautyyu.top/origin/C619JS.jpg)

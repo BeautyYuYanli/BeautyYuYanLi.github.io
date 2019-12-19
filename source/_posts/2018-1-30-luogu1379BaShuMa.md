@@ -2,7 +2,7 @@
 title: luogu1376八数码|题解
 date: 2018-1-30 17:30:11
 tags: [题解,搜索]
-cover: https://pics1.beautyyuyanli.ml/C6RXaq.jpg
+thumbnail: https://pics1.beautyyu.top/origin/C6RXaq.jpg
 ---
 
 
@@ -99,4 +99,4 @@ int main (){
     return 0;
 }
 ```
-![](https://pics1.beautyyuyanli.ml/C6RXaq.jpg)
+![](https://pics1.beautyyu.top/origin/C6RXaq.jpg)

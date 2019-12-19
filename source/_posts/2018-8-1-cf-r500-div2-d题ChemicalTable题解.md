@@ -2,7 +2,7 @@
 title: cf-r500-div2-d题ChemicalTable|题解
 date: 2018-8-1
 tags: [cf,并查集,题解]
-cover: https://pics1.beautyyuyanli.ml/PKOE3d.jpg
+thumbnail: https://pics1.beautyyu.top/origin/PKOE3d.jpg
 mathjax: true
 ---
 
@@ -10,7 +10,7 @@ mathjax: true
 >
 > Recently  scientists discovered that for every four different elements in this  table that form a rectangle with sides parallel to the sides of the  table, if they have samples of three of the four elements, they can  produce a sample of the fourth element using nuclear fusion. So if we  have elements in positions (*r*1, *c*1), (*r*1, *c*2), (*r*2, *c*1), where *r*1 ≠ *r*2 and *c*1 ≠ *c*2, then we can produce element (*r*2, *c*2).
 >
-> ![img](https://pics1.beautyyuyanli.ml.png) 
+> ![img](https://pics1.beautyyu.top/origin.png) 
 >
 > Samples  used in fusion are not wasted and can be used again in future fusions.  Newly crafted elements also can be used in future fusions.
 >
@@ -100,4 +100,4 @@ int main (){
 
 以上.
 
-![](https://pics1.beautyyuyanli.ml/PKOE3d.jpg)
+![](https://pics1.beautyyu.top/origin/PKOE3d.jpg)
