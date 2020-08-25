@@ -2,18 +2,19 @@
 title: cf-r500-div2-d题ChemicalTable|题解
 date: 2018-8-1
 tags: [cf,并查集,题解]
+categories: [算法]
 thumbnail: https://pics1.beautyyu.top/origin/PKOE3d.jpg
 mathjax: true
 ---
 
 > Innopolis University scientists continue to investigate the periodic table. There are *n*·*m* known elements and they form a periodic table: a rectangle with *n* rows and *m* columns. Each element can be described by its coordinates (*r*, *c*) (1 ≤ *r* ≤ *n*, 1 ≤ *c* ≤ *m*) in the table.
->
+> 
 > Recently  scientists discovered that for every four different elements in this  table that form a rectangle with sides parallel to the sides of the  table, if they have samples of three of the four elements, they can  produce a sample of the fourth element using nuclear fusion. So if we  have elements in positions (*r*1, *c*1), (*r*1, *c*2), (*r*2, *c*1), where *r*1 ≠ *r*2 and *c*1 ≠ *c*2, then we can produce element (*r*2, *c*2).
->
+> 
 > ![img](https://pics1.beautyyu.top/origin.png) 
->
+> 
 > Samples  used in fusion are not wasted and can be used again in future fusions.  Newly crafted elements also can be used in future fusions.
->
+> 
 > Innopolis University scientists already have samples of *q* elements. They want to obtain samples of all *n*·*m*  elements. To achieve that, they will purchase some samples from other  laboratories and then produce all remaining elements using an arbitrary  number of nuclear fusions in some order. Help them to find the minimal  number of elements they need to purchase.
 
 先下一个定义:
@@ -46,56 +47,55 @@ mathjax: true
 #define llint long long
 using namespace std;
 struct coo{
-	int x,y;
-	bool operator < (const coo &be)const{
-		if (x != be.x) return x < be.x;
-		else return y < be.y;
-	}
+    int x,y;
+    bool operator < (const coo &be)const{
+        if (x != be.x) return x < be.x;
+        else return y < be.y;
+    }
 }arr[400000];
 //set
 int fa[400000];
 int set_(int k){
-	if (k == fa[k]) return k;
-	else return fa[k] = set_(fa[k]);
+    if (k == fa[k]) return k;
+    else return fa[k] = set_(fa[k]);
 }
 int merge(int k,int l){
-	fa[set_(k)] = set_(l);
-	return set_(k);
+    fa[set_(k)] = set_(l);
+    return set_(k);
 }
 int main (){
-	int n,m,k,ans = 0;
-	cin >> n >> m >> k;
-	for (int i = 1;i <= k;++ i){
-		scanf("%d%d",&arr[i].x,&arr[i].y);
-	}
-	sort(arr + 1,arr + 1 + k);
-	for (int i = 1;i <= m;++ i)
-		fa[i] = i;
-	int p = 0,cnt = 0;
-	bool ifcnt = 0;
-	for (int i = 1;i <= n;++ i){
-		int f = 0;
-		while (++p <= k && arr[p].x == i){
-			ifcnt = 1;
-			int &y = arr[p].y;
-			if (!f) f = set_(y);
-			else merge(y,f);
-		}
-		if (!ifcnt) ++ cnt;
-		ifcnt = 0;
-		p --;
-	}
-	int f = set_(1);
-	for (int i = 2;i <= m;++ i){
-		if (set_(f) != set_(i)) {
-			++ ans;
-			f = merge(f,set_(i));
-		}
-	}
-	cout << ans + cnt;
-	return 0;
+    int n,m,k,ans = 0;
+    cin >> n >> m >> k;
+    for (int i = 1;i <= k;++ i){
+        scanf("%d%d",&arr[i].x,&arr[i].y);
+    }
+    sort(arr + 1,arr + 1 + k);
+    for (int i = 1;i <= m;++ i)
+        fa[i] = i;
+    int p = 0,cnt = 0;
+    bool ifcnt = 0;
+    for (int i = 1;i <= n;++ i){
+        int f = 0;
+        while (++p <= k && arr[p].x == i){
+            ifcnt = 1;
+            int &y = arr[p].y;
+            if (!f) f = set_(y);
+            else merge(y,f);
+        }
+        if (!ifcnt) ++ cnt;
+        ifcnt = 0;
+        p --;
+    }
+    int f = set_(1);
+    for (int i = 2;i <= m;++ i){
+        if (set_(f) != set_(i)) {
+            ++ ans;
+            f = merge(f,set_(i));
+        }
+    }
+    cout << ans + cnt;
+    return 0;
 }
-
 ```
 
 以上.

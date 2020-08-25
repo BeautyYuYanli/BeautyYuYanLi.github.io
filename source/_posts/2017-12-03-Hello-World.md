@@ -2,6 +2,7 @@
 title: Hello World
 date: 2017-12-03 11:04:11
 tags: [日记]
+categories: [生活]
 ---
 ## 2017-12-3 早上 做出了这么一个能看的网页
 ***

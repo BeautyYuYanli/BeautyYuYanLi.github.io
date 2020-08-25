@@ -7,11 +7,11 @@ thumbnail: https://pics1.beautyyu.top/origin/C6WPsJ.jpg
 
 题意简述:
 
-   > 有n个机器，每个机器有2个芯片，每个芯片可以放k个电池。
-   >   每个芯片能量是k个电池的能量的最小值。
-   >   两个芯片的能量之差越小，这个机器就工作的越好。
-   >   现在有2nk个电池，已知它们的能量，我们要把它们放在n个机器上的芯片上，
-   >   使得所有机器的能量之差的最大值最小
+> 有n个机器，每个机器有2个芯片，每个芯片可以放k个电池。
+>   每个芯片能量是k个电池的能量的最小值。
+>   两个芯片的能量之差越小，这个机器就工作的越好。
+>   现在有2nk个电池，已知它们的能量，我们要把它们放在n个机器上的芯片上，
+>   使得所有机器的能量之差的最大值最小
 
 自然,求解最大值最小问题应当用二分实现.主程序很容易就能写出来了
 
@@ -47,7 +47,7 @@ thumbnail: https://pics1.beautyyu.top/origin/C6WPsJ.jpg
 
 那么问题可以解释为:
 
-   > 一个满足约束t的有用电池分配方案,是否有足够的填充电池使这个方案实现??
+> 一个满足约束t的有用电池分配方案,是否有足够的填充电池使这个方案实现??
 
 **那么就来分配有用电池**
 
@@ -87,5 +87,5 @@ thumbnail: https://pics1.beautyyu.top/origin/C6WPsJ.jpg
         return 1;
     }
 ```
-![](https://pics1.beautyyu.top/origin/C6WPsJ.jpg)
 
+![](https://pics1.beautyyu.top/origin/C6WPsJ.jpg)

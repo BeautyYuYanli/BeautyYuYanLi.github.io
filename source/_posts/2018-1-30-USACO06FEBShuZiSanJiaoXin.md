@@ -5,17 +5,18 @@ tags: [题解,搜索]
 thumbnail: https://pics1.beautyyu.top/origin/C62X9O.jpg
 ---
 
-
-
 ***
 
 ### 1
 
 观察易得 答案实际上是一个杨辉三角形分别乘上对应数字的和
-#### 杨辉三角形 
+
+#### 杨辉三角形
+
 直接打表即可
+
 ```c++
-	int yanghui[13][13] = {{0,0,0,0,0,0,0,0,0,0,0,0,0},
+    int yanghui[13][13] = {{0,0,0,0,0,0,0,0,0,0,0,0,0},
 {0,1,0,0,0,0,0,0,0,0,0,0,0},
 {0,1,1,0,0,0,0,0,0,0,0,0,0},
 {0,1,2,1,0,0,0,0,0,0,0,0,0},
@@ -48,44 +49,49 @@ for (int i = 1;i <= 12;++ i){
     }
     printf("}\n");
 ```
+
 ***
 
 ### 2
 
 然后这道题就成了求1-n的全排列
 这里我用了`swap`实现全排列
+
 ```c++
 void dfs(int handle,int weight){
-	for (int i = handle;i <= n;++ i){
-		swap(arr[i],arr[handle]);
-		dfs(handle + 1,weight + arr[handle] * yanghui[n][handle]);
-		swap(arr[i],arr[handle]);
-	}
-	return ;
+    for (int i = handle;i <= n;++ i){
+        swap(arr[i],arr[handle]);
+        dfs(handle + 1,weight + arr[handle] * yanghui[n][handle]);
+        swap(arr[i],arr[handle]);
+    }
+    return ;
 }
 ```
+
 ---
+
 ### 3
 
 **但这样不保证字典序**
 通过观察可以发现 杨辉三角满足轴对称
 例如n = 4 时`a b c d`和`a c b d`和`d b c a`和`d c b a`这样不同的排序可以得到相同的sum
 因此我在输出时强行把它变成字典序
+
 ```c++
 if (handle > n && weight == m){
-		for (int i = 1;i <= n;++ i)
-		{
-			if (i <= n / 2 && arr[n - i + 1] < arr[i])
-				swap(arr[i],arr[n - i + 1]);
-			printf("%d ",arr[i]);
-		}
-		exit(0);
-	}
+        for (int i = 1;i <= n;++ i)
+        {
+            if (i <= n / 2 && arr[n - i + 1] < arr[i])
+                swap(arr[i],arr[n - i + 1]);
+            printf("%d ",arr[i]);
+        }
+        exit(0);
+    }
 ```
-
 
 ***这个方法不确保答案的正确性 但在`n<=12`的规模下还是不会出问题的***
 ---
+
 ***
 
 ### 4

@@ -25,7 +25,6 @@ thumbnail: https://pics1.beautyyu.top/origin/PwL1yR.jpg
 代码如下
 
 ```c++
-
 #include <iostream>
 #include <cstdio>
 #include <cstdlib>
@@ -119,7 +118,6 @@ int main(){
         }
         return 0;
 }
-
 ```
 
 文结

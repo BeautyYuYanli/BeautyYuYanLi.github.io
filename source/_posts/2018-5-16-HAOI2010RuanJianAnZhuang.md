@@ -5,8 +5,6 @@ tags: [tarjan,dp,题解]
 thumbnail: https://pics1.beautyyu.top/origin/C6RVgg.jpg
 ---
 
-
-
 如果不考虑依赖关系环的话本题可以得到40分
 
 具体做法就是在树上做一次背包dp.引用`<背包九讲>`的`泛化物品`概念,物品本身可以视作一个`weight`对应`value`的函数.只要枚举为每件物品提供的`weight`后取最优即可.本题中'物品'指的就是树上的一颗子树
@@ -27,7 +25,7 @@ thumbnail: https://pics1.beautyyu.top/origin/C6RVgg.jpg
 using namespace std;
 struct edge
 {
-	int v, nxt;
+    int v, nxt;
 }e[5000];
 int head[5000],memf[5000][1000],memd[5000][1000];
 //'memd' -- memory for function 'd','memf' -- memory for function 'f'
@@ -38,84 +36,85 @@ int f(int al,int be);
 int sta[5000],top = 0;bool insta[5000];//stack
 int dfn[5000],low[5000],bl[5000],bcnt = 0,c = 0;
 void tarjan(int k){
-	dfn[k] = low[k] = ++ c;
-	insta[sta[++ top] = k] = 1;
-	for (int i = head[k];i;i = e[i].nxt){
-		int &ev = e[i].v;
-		if (!dfn[ev]){
-			tarjan(ev);
-			low[k] = min(low[k],low[ev]);
-		}
-		else if (insta[ev])
-			low[k] = min(low[k],dfn[ev]);
-	}
-	if (low[k] == dfn[k]){
-		++ bcnt;
-		do insta[sta[top]] = 0,bl[sta[top --]] = bcnt;
-		while(sta[top + 1] != k);
-	}
-	return ;
+    dfn[k] = low[k] = ++ c;
+    insta[sta[++ top] = k] = 1;
+    for (int i = head[k];i;i = e[i].nxt){
+        int &ev = e[i].v;
+        if (!dfn[ev]){
+            tarjan(ev);
+            low[k] = min(low[k],low[ev]);
+        }
+        else if (insta[ev])
+            low[k] = min(low[k],dfn[ev]);
+    }
+    if (low[k] == dfn[k]){
+        ++ bcnt;
+        do insta[sta[top]] = 0,bl[sta[top --]] = bcnt;
+        while(sta[top + 1] != k);
+    }
+    return ;
 }
 //tarjan end
 
 int main (){
-	int n,m;
-	//read gragh
-	cin >> n >> m;
-	int de[5000],be[5000],ge[5000];
-	for (int i = 1;i <= n;++ i)
-		scanf("%d",&de[i]);
-	for (int i = 1;i <= n;++ i)
-		scanf("%d",&be[i]);
-	int al,cnt = 0;
-	for (int i = 1;i <= n;++ i){
-		scanf("%d",&al);
-		ge[i] = al;
-		e[++ cnt] = edge{i,head[al]};
-		head[al] = cnt;
-	}
-	//read gragh end
-	for (int i = 1;i <= n;++ i)
-		if(!dfn[i]) tarjan(i);
-	//build new tree
-	for (int i = 1;i <= n;++ i)
-		w[bl[i]] += de[i],
-		v[bl[i]] += be[i];
-	memset(head,0,sizeof(head));
-	memset(e,0,sizeof(e));
-	cnt = 0;
-	bool havefather[5000];
-	for (int i = 1;i <= n;++ i)
-		if (bl[i] != bl[ge[i]])
-			e[++ cnt] = edge{bl[i],head[bl[ge[i]]]},
-			head[bl[ge[i]]] = cnt,
-			havefather[bl[i]] = 1;
-	n = bcnt;
-	for (int i = 1;i <= n;++ i)
-		if(!havefather[i])
-			e[++ cnt] = edge{i,head[0]},
-			head[0] = cnt;
-	//build new tree end
-	memset(memd,-1,sizeof(memd));
-	memset(memf,-1,sizeof(memf));
-	memset(memf[0],0,sizeof(memf[0]));
-	cout << d(0,m);
-	return 0;
+    int n,m;
+    //read gragh
+    cin >> n >> m;
+    int de[5000],be[5000],ge[5000];
+    for (int i = 1;i <= n;++ i)
+        scanf("%d",&de[i]);
+    for (int i = 1;i <= n;++ i)
+        scanf("%d",&be[i]);
+    int al,cnt = 0;
+    for (int i = 1;i <= n;++ i){
+        scanf("%d",&al);
+        ge[i] = al;
+        e[++ cnt] = edge{i,head[al]};
+        head[al] = cnt;
+    }
+    //read gragh end
+    for (int i = 1;i <= n;++ i)
+        if(!dfn[i]) tarjan(i);
+    //build new tree
+    for (int i = 1;i <= n;++ i)
+        w[bl[i]] += de[i],
+        v[bl[i]] += be[i];
+    memset(head,0,sizeof(head));
+    memset(e,0,sizeof(e));
+    cnt = 0;
+    bool havefather[5000];
+    for (int i = 1;i <= n;++ i)
+        if (bl[i] != bl[ge[i]])
+            e[++ cnt] = edge{bl[i],head[bl[ge[i]]]},
+            head[bl[ge[i]]] = cnt,
+            havefather[bl[i]] = 1;
+    n = bcnt;
+    for (int i = 1;i <= n;++ i)
+        if(!havefather[i])
+            e[++ cnt] = edge{i,head[0]},
+            head[0] = cnt;
+    //build new tree end
+    memset(memd,-1,sizeof(memd));
+    memset(memf,-1,sizeof(memf));
+    memset(memf[0],0,sizeof(memf[0]));
+    cout << d(0,m);
+    return 0;
 }
 int d(int rt,int wei){
 //most value porduced by the tree 'rt' with weight'wei'
-	if (memd[rt][wei] != -1) return memd[rt][wei];
-	if (wei < w[rt]) return memd[rt][wei] = 0;
-	return memd[rt][wei] = f(head[rt],wei - w[rt]) + v[rt];
+    if (memd[rt][wei] != -1) return memd[rt][wei];
+    if (wei < w[rt]) return memd[rt][wei] = 0;
+    return memd[rt][wei] = f(head[rt],wei - w[rt]) + v[rt];
 }
 int f(int i,int wei){
 //most value porduced by the list begins from 'i' with weight'wei'
-	if (memf[i][wei] != -1) return memf[i][wei];
-	int ev = e[i].v;
-	int ans = 0;
-	for (int j = 0;j <= wei;++ j)
-		ans = max(ans,d(ev,j) + f(e[i].nxt,wei - j));
-	return memf[i][wei] = ans;
+    if (memf[i][wei] != -1) return memf[i][wei];
+    int ev = e[i].v;
+    int ans = 0;
+    for (int j = 0;j <= wei;++ j)
+        ans = max(ans,d(ev,j) + f(e[i].nxt,wei - j));
+    return memf[i][wei] = ans;
 }
 ```
+
 ![](https://pics1.beautyyu.top/origin/C6RVgg.jpg)

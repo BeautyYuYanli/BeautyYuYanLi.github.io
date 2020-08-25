@@ -1,11 +1,10 @@
 ---
-title: a*学习笔记
+title: a-star学习笔记
 date: 2018-3-04 12:12:12
 tags: [a*,搜索,笔记]
+categories: [算法]
 thumbnail: https://pics1.beautyyu.top/origin/C6RxiV.jpg
 ---
-
-
 
 #a*学习笔记
 
@@ -33,11 +32,11 @@ a*一般用于解决最小花费/最大价值问题
 1. 从`openset`中取出F最小的点`now`,并加入`offset`
 2. **判读该点是否为`goal`,真则完成搜索过程**
 3. 对于`now`转移得`neighbor`,对于一个`neighbor`而言:
-    1. 它在offset中:它被continue了
-    2. 它在openset中:
-        1. 它的G值优于openset中的那位,则将其替代,更新comeFrom
-        2. 它的G值不如openset中的那位,则不管它
-    3. 它不在openset中:加入openset
+   1. 它在offset中:它被continue了
+   2. 它在openset中:
+      1. 它的G值优于openset中的那位,则将其替代,更新comeFrom
+      2. 它的G值不如openset中的那位,则不管它
+   3. 它不在openset中:加入openset
 
 `a*`的操作原理大约是这样 更具体的讲解可以翻阅篇首提到的博客
 

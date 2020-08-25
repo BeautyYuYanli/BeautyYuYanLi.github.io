@@ -5,8 +5,6 @@ tags: [二分,分治,笔记]
 thumbnail: https://pics1.beautyyu.top/origin/C6RAC8.jpg
 ---
 
-
-
 是一篇拖延症晚期拖了好久才开始写的学习笔记
 
 大概记一下关于二分和分治的感想吧
