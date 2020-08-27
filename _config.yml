@@ -5,7 +5,7 @@
 # Site
 title: 银河美术馆-Beautyyu
 subtitle: Beautyyu言醴的个人独立博客
-description: Beautyyu言醴的个人独立博客
+description: 热爱ACGN和技术的学生; 谈论音乐, 动画, 文学, 设计和自然科学
 keywords: Beautyyu言醴
 author: BeautyYu言醴
 language: zh-CN
@@ -13,7 +13,7 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://beautyyu.top
+url: http://beautyyu.top
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -73,7 +73,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: material
+theme: hexo-theme-next
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
