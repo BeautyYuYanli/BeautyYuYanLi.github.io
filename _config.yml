@@ -5,7 +5,7 @@
 # Site
 title: 银河美术馆-Beautyyu
 subtitle: Beautyyu言醴的个人独立博客
-description: 热爱ACGN和技术的学生; 谈论音乐, 动画, 文学, 设计和自然科学
+description: 热爱ACGN和技术的学生; 谈论设计, 音乐, 自然科学和文学
 keywords: Beautyyu言醴
 author: BeautyYu言醴
 language: zh-CN
@@ -41,8 +41,10 @@ future: true
 highlight:
   enable: false
   line_number: true
-  auto_detect: false
-  tab_replace:
+  auto_detect: true
+  tab_replace: true
+prismjs:
+  enable: true
   
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
@@ -50,11 +52,11 @@ highlight:
 # order_by: Posts order. (Order by date descending by default)
 index_generator:
   path: ''
-  per_page: 9
+  per_page: 5
   order_by: -date
   
 # Category & Tag
-default_category: uncategorized
+default_category: 
 category_map:
 tag_map:
 
@@ -106,3 +108,15 @@ feed:
   content_limit: 140
   content_limit_delim: ' '
   order_by: -date
+  
+tag_generator:
+  per_page: 10
+  order_by: -date
+  enable_index_page: tag
+  
+sitemap:
+  path: sitemap.xml
+  #template: ./sitemap.xml
+  rel: false
+  tags: true
+  categories: true
