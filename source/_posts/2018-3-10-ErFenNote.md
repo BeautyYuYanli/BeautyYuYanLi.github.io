@@ -2,6 +2,7 @@
 title: 二分/分治学习笔记
 date: 2018-3-10
 tags: [二分,分治,笔记]
+categories: [算法]
 thumbnail: https://pics1.beautyyu.top/origin/C6RAC8.jpg
 ---
 
