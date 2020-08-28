@@ -3,7 +3,6 @@ title: luogu1273有线电视网|题解
 date: 2018-5-24 16:16:16
 tags: [dp,题解]
 categories: [算法]
-thumbnail: https://pics1.beautyyu.top/origin/C619JS.jpg
 ---
 
 其实是个`背包问题`
@@ -102,5 +101,3 @@ int main (){
     return 0;
 }
 ```
-
-![](https://pics1.beautyyu.top/origin/C619JS.jpg)

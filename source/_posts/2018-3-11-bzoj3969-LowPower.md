@@ -3,7 +3,6 @@ title: bzoj3969 LowPower|题解
 date: 2018-3-11 12:12:12
 tags: [二分,题解]
 categories: [算法]
-thumbnail: https://pics1.beautyyu.top/origin/C6WPsJ.jpg
 ---
 
 题意简述:
@@ -88,5 +87,3 @@ thumbnail: https://pics1.beautyyu.top/origin/C6WPsJ.jpg
         return 1;
     }
 ```
-
-![](https://pics1.beautyyu.top/origin/C6WPsJ.jpg)

@@ -3,7 +3,6 @@ title: 二分/分治学习笔记
 date: 2018-3-10
 tags: [二分,分治,笔记]
 categories: [算法]
-thumbnail: https://pics1.beautyyu.top/origin/C6RAC8.jpg
 ---
 
 是一篇拖延症晚期拖了好久才开始写的学习笔记
@@ -58,5 +57,3 @@ thumbnail: https://pics1.beautyyu.top/origin/C6RAC8.jpg
 这种分治用于求第k大问题等.和其它分治相比,它的特色在于:**没有一个固定的`mid`值,它只有一个随机取的`mid`的价值**,并通过比较这个价值的大小从两边向中间逼近,从而**求出`mid`值**,用于确定下一个区间.也就是二分的分治的反向操作
 
 当然,由于鄙人比较弱,所以不知道这个操作除了求第k大之外还有什么用
-
-![](https://pics1.beautyyu.top/origin/C6RAC8.jpg)

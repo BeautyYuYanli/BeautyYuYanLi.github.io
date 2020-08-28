@@ -3,7 +3,6 @@ title: SDOI2009_SuperGCD|题解
 date: 2018-9-04
 tags: [高精度,题解]
 categories: [算法]
-thumbnail: https://pics1.beautyyu.top/origin/PwL1yR.jpg
 ---
 
 一道恶心人的毒瘤题:高精度gcd
@@ -122,5 +121,3 @@ int main(){
 ```
 
 文结
-
-![](https://pics1.beautyyu.top/origin/PwL1yR.jpg)

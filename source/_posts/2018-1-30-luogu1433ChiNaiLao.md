@@ -3,7 +3,6 @@ title: luogu1433吃奶酪|题解
 date: 2018-1-30 17:30:11
 tags: [题解,搜索]
 categories: [算法]
-thumbnail: https://pics1.beautyyu.top/origin/C6WEIx.jpg
 ---
 
 ##看楼下的dalao都用了奇妙的操作
@@ -66,5 +65,3 @@ int main (){
     return 0;
 }
 ```
-
-![](https://pics1.beautyyu.top/origin/C6WEIx.jpg)

@@ -3,7 +3,6 @@ title: luogu1376八数码|题解
 date: 2018-1-30 17:30:11
 tags: [题解,搜索]
 categories: [算法]
-thumbnail: https://pics1.beautyyu.top/origin/C6RXaq.jpg
 ---
 
 本来是想拿这个题来练习双向bfs的 结果一开始连朴素写法都写不出来
@@ -98,5 +97,3 @@ int main (){
     return 0;
 }
 ```
-
-![](https://pics1.beautyyu.top/origin/C6RXaq.jpg)

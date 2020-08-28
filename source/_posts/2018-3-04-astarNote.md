@@ -3,7 +3,6 @@ title: a-star学习笔记
 date: 2018-3-04 12:12:12
 tags: [a*,搜索,笔记]
 categories: [算法]
-thumbnail: https://pics1.beautyyu.top/origin/C6RxiV.jpg
 ---
 
 #a*学习笔记
@@ -90,5 +89,3 @@ a*一般用于解决最小花费/最大价值问题
         return 0;
     }
 ```
-
-![](https://pics1.beautyyu.top/origin/C6RxiV.jpg)

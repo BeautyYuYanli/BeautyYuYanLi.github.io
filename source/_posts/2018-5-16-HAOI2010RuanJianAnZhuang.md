@@ -3,7 +3,6 @@ title: HAOI2010软件安装|题解
 date: 2018-5-16 17:17:17
 tags: [tarjan,dp,题解]
 categories: [算法]
-thumbnail: https://pics1.beautyyu.top/origin/C6RVgg.jpg
 ---
 
 如果不考虑依赖关系环的话本题可以得到40分
@@ -117,5 +116,3 @@ int f(int i,int wei){
     return memf[i][wei] = ans;
 }
 ```
-
-![](https://pics1.beautyyu.top/origin/C6RVgg.jpg)
