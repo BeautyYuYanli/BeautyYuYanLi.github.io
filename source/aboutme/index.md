@@ -2,42 +2,29 @@
 title: 关于我
 date: 1926-08-17
 ---
+# Hello👋Good Night!
+
+*This is Beautyyu, or 言醴(Yanli)*
+
+[![](https://img.shields.io/badge/-Blog-ff4088?logo=Hexo&logoColor=white&style=flat-square)](http://beautyyu.one) [![](https://img.shields.io/badge/-RSS-ffa500?logo=RSS&logoColor=fff&style=flat-square)](http://beautyyu.one/atom.xml) [![](https://img.shields.io/badge/-Email-c2392a?logo=Gmail&logoColor=white&style=flat-square)](mailto://beautyyuyanli@gmail.com) [![](https://img.shields.io/badge/-GitHub-black?logo=GitHub&style=flat-square)](https://github.com/beautyyuyanli) [![](https://img.shields.io/badge/-Telegram-2ca5e0?labelColor=fafafa&logo=Telegram&logoWidth=13&style=flat-square)](https://t.me/water_water_water_2077)  [![](https://img.shields.io/badge/-Twitter-1da1f2?logo=Twitter&logoColor=white&style=flat-square)](https://twitter.com/beautyyuyanli)
+
+🎓 Freshperson in Dalian University of Technology, majoring in Civil Engineering recently. (sigh.)
+
+🌊 Talk about ACGN (and 🎵Music🎵), art (esp. Building Design🏛️/Photography📷), science (esp. Mathematics/Biology/Philosophy/History📜), politics, and anything intersting.
+
+🔥 Poor experiences in algorithm competitions (OI and *CPC).
+
+✨ Underdeveloped web/spider developer. Mostly use C++/Python/JavaScript (HTML, CSS), with some experiences in Docker/Node.js/Selenium, etc.
+
+🌏 Chinese(native)/English(first forign)
+
+⏳ Want to learn Japanese, Haskell, Computer Vision, etc.
+
 > 越是孤单 越是向前
 >
-> 未来的我要让你听见 未来的我要让你看见
->
 > 越是疲倦 越不能歇
->
-> 明天有属于明天的世界 等待我去改写
->
-> -----<<未来的我>>
 
-cn言醴/Beautyyu
-
-就读于莆田擢英中学/莆田第一中学
-
-微笙无上计算机协会(2017)创建人之一.任第二届会长
-
-退役OIer
-
-崩崩崩佛系玩家
-
-vc圈|全员博爱|主厨洛|南北厨|龙墨厨
-
-热爱纯白|存娘|桐音|风守|纳兰寻风
-
-热爱纯白x系豆沙|雨狸x星辉|海鲜面x纳兰
-
-曾为[1W+star项目](https://github.com/komeiji-satori/Dress)做过贡献pwp
-
-[银河美术馆](https://item.taobao.com/item.htm?spm=a1z10.1-c-s.w4004-21164199081.11.78da3096SLWF0C&id=583724383026)是星尘的一本官方画册的名称.因为很喜欢就拿来用了.
-
-![头像](https://s1.ax1x.com/2018/12/12/FtE7sf.png)
-
-头像来自[纸片人生成器](https://make.girls.moe/#/)
-
-社交平台:
-
-企鹅:`1043026350`
+![](https://github-readme-stats.vercel.app/api?username=beautyyuyanli&show_icons=true&theme=dark)
+![](https://github-readme-stats.vercel.app/api/top-langs/?username=beautyyuyanli&layout=compact&theme=dark)
 
 <iframe src="https://player.bilibili.com/player.html?aid=10154377&cid=16776422&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="false" height="300px"> </iframe>
