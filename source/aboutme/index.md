@@ -25,6 +25,6 @@ date: 1926-08-17
 > 越是疲倦 越不能歇
 
 ![](https://github-readme-stats.vercel.app/api?username=beautyyuyanli&show_icons=true&theme=dark)
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=beautyyuyanli&layout=compact&theme=dark)
+![](https://github-readme-stats.vercel.app/api/top-langs/?username=beautyyuyanli&layout=compact&theme=dark&exclude_repo=beautyyuyanli.github.io)
 
 <iframe src="https://player.bilibili.com/player.html?aid=10154377&cid=16776422&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="false" height="300px"> </iframe>
